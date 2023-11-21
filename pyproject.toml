@@ -1,0 +1,30 @@
+[project]
+name = "dash-prometheus"
+version = "2023.11.0"
+description = "A Add-On for DASH (plotly) to write out metrics for prometheus"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["dash", "prometheus", "monitoring"]
+authors = [{ name = "Maurice Frank", email = "mfrank@hb-dx.com" }]
+maintainers = [{ name = "Maurice Frank", email = "mfrank@hb-dx.com" }]
+
+
+dependencies = [
+    "dash>=2.9.3",
+    "prometheus-client==0.18.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gitHBDX/dash-prometheus"
+
+# [project.scripts] # Optional
+# sample = "sample:main"
+
+# This is configuration specific to the `setuptools` build backend.
+# If you are using a different build backend, you will need to change this.
+# [tool.setuptools]
+# package-data = {"sample" = ["*.dat"]}
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
