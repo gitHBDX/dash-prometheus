@@ -14,8 +14,8 @@ histogram = Histogram(
     "dash_callback_duration",
     "Duration of Dash callback",
     ["module", "callback"],
-    registry=registry,
     buckets=(0.001, 0.01, 0.1, 1, 5, 10, 30, 60, 120, 300),
+    registry=registry,
 )
 
 
